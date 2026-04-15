@@ -1,4 +1,33 @@
-#carouselExample {
+#carouselExampleInterval {
     width: 800px;
     height: auto;
+}
+
+#logotipo {
+    text-align: center;
+}
+
+.form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.form-control {
+    width: 200px;
+    margin: 0 auto;
+    display: block;
+}
+
+.form-select {
+    width: 200px;
+    margin: 0 auto;
+    display: block;
+}
+
+.form-label {
+    text-align: center;
+    display: block;
+    margin-bottom: 5px;
 }
