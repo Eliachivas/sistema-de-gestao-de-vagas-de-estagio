@@ -1,0 +1,547 @@
+﻿<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Empresas - Carrossel</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="estilosite.css">
+  </head>
+  <body>
+    <header class="mb-4">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="site_estagio.html">
+            <img src="img/logo_do_site.jpeg" alt="Logotipo" width="100">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item"><a class="nav-link" href="site_estagio.html">Home</a></li>
+              <li class="nav-item"><a class="nav-link active" aria-current="page" href="empresas.html">Empresas</a></li>
+              <li class="nav-item"><a class="nav-link" href="index.html">Upload de documento</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Perfil</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container">
+      <h1 class="text-center mb-4">Empresas e oportunidades</h1>
+      <div class="mini-carousel mx-auto">
+        <div class="carousel-search-tab mb-3">
+          <div class="carousel-search-tab__label">Pesquisar</div>
+          <form class="d-flex carousel-search-tab__form" role="search">
+            <input class="form-control me-2 carousel-search-input" type="search" placeholder="Buscar empresa ou vaga" aria-label="Pesquisar">
+            <button class="btn btn-primary " type="submit"><a href="index2.html" class="wajr"> Buscar</a></button>
+          </form>
+        </div>
+        <div id="empresasCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+          <button type="button" data-bs-target="#empresasCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#empresasCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#empresasCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/imagem principal do site.jpeg" class="d-block w-100" alt="Empresas parceiras">
+            <div class="carousel">
+              
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/imagem_2_do_slide_principal.jpeg" class="d-block w-100" alt="Oportunidades de estágio">
+            <div class="carousel">
+             
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/imagem principal do site.jpeg" class="d-block w-100" alt="Conexão profissional">
+            <div class="carousel">
+              
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#empresasCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#empresasCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Próximo</span>
+        </button>
+      </div>
+      </div>
+      <section class="empresa-profiles-section mt-5">
+        <div class="empresa-profiles-row">
+          <article class="empresa-card">
+            <img src="img/bci.jpeg" alt="Empresa BCI" class="empresa-card__img" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#modalBCI">
+            <div class="empresa-card__body">
+              <h3 class="empresa-card__title">BCI</h3>
+              <p class="empresa-card__description">Vagas de estágio em TI e programas de aprendizagem para estudantes interessados em tecnologia.</p>
+            </div>
+          </article>
+          <article class="empresa-card">
+            <img src="img/autoridade_tributaria.jpeg" alt="Emp ATORIDADE TRIBUTARIA"class="empresa-card__img" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#modalAT">
+            <div class="empresa-card__body">
+              <h3 class="empresa-card__title">AUTORIDADE TRIBUTARIA</h3>
+              <p class="empresa-card__description">Consultoria de negócios com foco em programas de estágio para inovação e projetos reais.</p>
+            </div>
+          </article>
+          <article class="empresa-card">
+            <img src="img/vodacom.jpeg" alt="Empresa VODACOM" class="empresa-card__img" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#modalVodacom">
+            <div class="empresa-card__body">
+              <h3 class="empresa-card__title">VODACOM</h3>
+              <p class="empresa-card__description">Equipe de marketing oferece oportunidades para jovens talentos aperfeiçoarem comunicação e design.</p>
+            </div>
+          </article>
+          <article class="empresa-card">
+            <img src="img/city_link.jpeg" alt="Empresa CITY LINK" class="empresa-card__img" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#modalCityLink">
+            <div class="empresa-card__body">
+              <h3 class="empresa-card__title">CITY LINK</h3>
+              <p class="empresa-card__description">Estágios em engenharia e projetos de sustentabilidade para quem busca crescimento profissional.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <form action="candidatura.html" method="post">
+      <!-- Modal BCI -->
+      <div class="modal fade" id="modalBCI" aria-hidden="true" aria-labelledby="modalBCILabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="modalBCILabel">BCI - Banco Comercial e de Investimentos</h1>
+              <button type="submit" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <img src="img/bci.jpeg" alt="BCI" style="width: 100%; max-width: 400px; margin: 0 auto; display: block; margin-bottom: 20px;">
+    
+            <h2>Vaga de Emprego: Recepcionista</h2>
+            <h2> Descrição da Vaga</h2>
+
+<p>
+
+    O BCI procura uma Recepcionista organizada, comunicativa e com excelente apresentação para integrar a sua equipa.
+
+    A profissional será responsável por garantir um atendimento cordial e eficiente aos clientes e visitantes,
+
+    representando a imagem institucional do banco.
+
+</p>
+
+<h2>Responsabilidades</h2>
+
+<ul>
+
+    <li>Receber e encaminhar clientes e visitantes</li>
+
+    <li>Atender chamadas telefónicas e encaminhá-las corretamente</li>
+
+    <li>Gerir correspondências e documentos</li>
+
+    <li>Apoiar nas tarefas administrativas básicas</li>
+
+    <li>Manter a área de recepção organizada e profissional</li>
+
+</ul>
+
+<h2>Requisitos</h2>
+
+<ul>
+
+    <li>Nível médio completo (mínimo)</li>
+
+    <li>Experiência anterior em atendimento ao público (preferencial)</li>
+
+    <li>Boa comunicação verbal e escrita</li>
+
+    <li>Conhecimentos básicos de informática (Word, Excel, e-mail)</li>
+
+    <li>Boa apresentação e postura profissional</li>
+
+    <li>Fluência em Português (Inglês será uma vantagem)</li>
+
+</ul>
+
+<h2>Competências Valorizadas</h2>
+
+<ul>
+
+    <li>Simpatia e empatia no atendimento</li>
+
+    <li>Capacidade de organização</li>
+
+    <li>Pontualidade e responsabilidade</li>
+
+    <li>Trabalho em equipa</li>
+
+</ul>
+
+<h2>Oferecemos</h2>
+
+<ul>
+
+    <li>Ambiente de trabalho profissional</li>
+
+    <li>Oportunidade de crescimento</li>
+
+    <li>Remuneração compatível com a função</li>
+
+    <li>Benefícios internos do banco</li>
+
+</ul>
+
+<h2>Como Candidatar-se</h2>
+
+<div>
+
+    <p>Envie o seu CV e carta de apresentação para: <strong>[businesseliachivas@gmail.com]</strong></p>
+
+    <p>Prazo de candidatura: <strong>[16/10/2026]</strong></p>
+
+</div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                  <button type="submit" class="btn btn-primary">Candidatar-se para Vaga</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          </form>
+
+          <form action="candidatura.html" method="post">
+          <!-- Modal Autoridade Tributária -->
+          <div class="modal fade" id="modalAT" aria-hidden="true" aria-labelledby="modalATLabel" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="modalATLabel">Autoridade Tributária</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <img src="img/autoridade_tributaria.jpeg" alt="Autoridade Tributária" style="width: 100%; max-width: 400px; margin: 0 auto; display: block; margin-bottom: 20px;">
+                  <h2>Descrição da Vaga</h2>
+
+          <p>
+
+              A Autoridade Tributária de Moçambique procura um profissional qualificado para a área de Recursos Humanos.
+
+              O candidato será responsável por apoiar na gestão de colaboradores, recrutamento, formação e cumprimento das
+
+              políticas internas da instituição.
+
+          </p>
+
+          <h2> Responsabilidades</h2>
+
+          <ol>
+
+              <li>Apoiar processos de recrutamento e seleção</li>
+
+              <li>Gerir registos e documentação dos colaboradores</li>
+
+              <li>Apoiar na integração de novos funcionários</li>
+
+              <li>Controlar assiduidade e desempenho</li>
+
+              <li>Implementar políticas e práticas de RH</li>
+
+              <li>Apoiar ações de formação e desenvolvimento</li>
+
+          </ol>
+
+          <h2>Requisitos</h2>
+
+          <ol>
+
+              <li>Licenciatura em Gestão de Recursos Humanos, Administração ou áreas afins</li>
+
+              <li>Experiência na área de RH (preferencial)</li>
+
+              <li>Conhecimentos de legislação laboral moçambicana</li>
+
+              <li>Boa comunicação verbal e escrita</li>
+
+              <li>Conhecimentos de informática (Word, Excel)</li>
+
+          </ol>
+
+          <h2>Competências Valorizadas</h2>
+
+          <ol>
+
+              <li>Organização e atenção aos detalhes</li>
+
+              <li>Ética e confidencialidade</li>
+
+              <li>Capacidade de trabalhar em equipa</li>
+
+              <li>Proatividade e iniciativa</li>
+
+          </ol>
+
+          <h2>Oferecemos</h2>
+
+          <ol>
+
+              <li>Integração numa instituição pública de referência</li>
+
+              <li>Ambiente profissional e estável</li>
+
+              <li>Oportunidades de desenvolvimento</li>
+
+            
+
+          </ol>
+
+          <div >
+
+              <h2>Como Candidatar-se</h2>
+
+              <p>Envie o seu CV e carta de apresentação para: <strong>[businesseliachivas@gmail.com]</strong></p>
+
+              <p>Prazo de candidatura: <strong>[06/12/2026]</strong></p>
+
+          </div>
+                </div>
+                <div>
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                  <button type="submit" class="btn btn-primary">Candidatar-se para Vaga</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+
+        <form action="candidatura.html" method="post"> 
+    <!-- Modal Vodacom -->
+    <div class="modal fade" id="modalVodacom" aria-hidden="true" aria-labelledby="modalVodacomLabel" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="modalVodacomLabel">Vodacom Moçambique</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img src="img/vodacom.jpeg" alt="Vodacom" style="width: 100%; max-width: 400px; margin: 0 auto; display: block; margin-bottom: 20px;">
+           <h2>📌 Descrição da Vaga</h2>
+
+    <p>
+
+        A Vodacom está à procura de um Técnico de Informática qualificado para integrar a sua equipa de TI.
+
+        O profissional será responsável por garantir o bom funcionamento dos sistemas, suporte técnico aos utilizadores
+
+        e manutenção da infraestrutura tecnológica.
+
+    </p>
+
+    <h2> Responsabilidades</h2>
+
+    <ol>
+
+        <li>Prestar suporte técnico a utilizadores (hardware e software)</li>
+
+        <li>Instalar e configurar computadores e sistemas</li>
+
+        <li>Monitorar redes e sistemas da empresa</li>
+
+        <li>Diagnosticar e resolver problemas técnicos</li>
+
+        <li>Garantir a segurança básica dos sistemas</li>
+
+        <li>Apoiar na manutenção de servidores e redes</li>
+
+    </ol>
+
+    <h2>Requisitos</h2>
+
+    <ol>
+
+        <li>Formação em Informática ou áreas afins</li>
+
+        <li>Experiência na área de TI (preferencial)</li>
+
+        <li>Conhecimentos de Windows e Linux</li>
+
+        <li>Noções de redes (LAN, Wi-Fi, TCP/IP)</li>
+
+        <li>Conhecimentos básicos de segurança informática</li>
+
+        <li>Boa capacidade de resolução de problemas</li>
+
+    </ol>
+
+    <h2>Competências Valorizadas</h2>
+
+    <ol>
+
+        <li>Pensamento analítico</li>
+
+        <li>Proatividade</li>
+
+        <li>Trabalho em equipa</li>
+
+        <li>Capacidade de aprendizagem rápida</li>
+
+    </ol>
+
+    <h2>Oferecemos</h2>
+
+    <ol>
+
+        <li>Integração numa empresa líder em telecomunicações</li>
+
+        <li>Ambiente tecnológico dinâmico</li>
+
+        <li>Formação contínua</li>
+
+        <li>Oportunidade de crescimento profissional</li>
+
+        <li>Salário compatível com a função</li>
+
+    </ol>
+
+    <div >
+
+        <h2>Como Candidatar-se</h2>
+
+        <p>Envie o seu CV para: <strong>[businesseliachivas@gmail.com]</strong></p>
+
+        <p>Prazo de candidatura: <strong>[02/14/2026]</strong></p>
+
+        <a href="#" class="btn">Candidatar-se Agora</a>
+
+    </div>
+
+</div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+            <button type="submit" class="btn btn-primary">Candidatar-se para Vaga</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    </form>
+
+    <form action="candidatura.html" method="post">
+    <!-- Modal City Link -->
+    <div class="modal fade" id="modalCityLink" aria-hidden="true" aria-labelledby="modalCityLinkLabel" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="modalCityLinkLabel">City Link</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img src="img/city_link.jpeg" alt="City Link" style="width: 100%; max-width: 400px; margin: 0 auto; display: block; margin-bottom: 20px;">
+            <h2> Descrição da Vaga</h2>
+
+    <p>
+
+        A Citylink está à procura de um Motorista responsável e experiente para integrar a sua equipa.
+
+        O profissional será responsável pelo transporte seguro e eficiente de passageiros ou mercadorias,
+
+        garantindo pontualidade e qualidade no serviço prestado.
+
+    </p>
+
+    <h2> Responsabilidades</h2>
+
+    <ol>
+
+        <li>Conduzir veículos da empresa com segurança e responsabilidade</li>
+
+        <li>Cumprir rotas e horários estabelecidos</li>
+
+        <li>Garantir a manutenção básica e limpeza do veículo</li>
+
+        <li>Reportar eventuais avarias ou incidentes</li>
+
+        <li>Prestar atendimento cordial aos clientes</li>
+
+    </0l>
+
+    <h2>Requisitos</h2>
+
+    <ol>
+
+        <li>Carta de condução válida (carta profissional)</li>
+
+        <li>Experiência comprovada como motorista (preferencial)</li>
+
+        <li>Conhecimento das rotas locais</li>
+
+        <li>Boa conduta e histórico de condução limpo</li>
+
+        <li>Disponibilidade de horários</li>
+
+    </ol>
+
+    <h2>Competências Valorizadas</h2>
+
+    <ol>
+
+        <li>Pontualidade e responsabilidade</li>
+
+        <li>Atenção aos detalhes</li>
+
+        <li>Boa comunicação</li>
+
+        <li>Capacidade de trabalhar sob pressão</li>
+
+    </ol>
+
+    <h2>Oferecemos</h2>
+
+    <ol>
+
+        <li>Salário compatível com a função</li>
+
+        <li>Ambiente de trabalho estável</li>
+
+        <li>Possibilidade de crescimento na empresa</li>
+
+        <li>Benefícios internos</li>
+
+    </ol>
+
+    <div>
+
+        <h2> Como Candidatar-se</h2>
+
+        <p>Envie o seu CV para: <strong>[businesseliachivas@gmail.com]</strong></p>
+
+        <p>Prazo de candidatura: <strong>[04/3/2025]</strong></p>
+          </div>
+          <div>
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+            <button type="submit" class="btn btn-primary">Candidatar-se para Vaga</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    </form>
+
+     <!-- Rodapé -->
+  <footer class="bg-dark text-white text-center py-3 mt-5">
+    <p class="mb-0"> 2026 businesseliachivas | Todos os direitos reservados</p>
+  </footer>
+    
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

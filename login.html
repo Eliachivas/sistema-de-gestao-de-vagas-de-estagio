@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="estilosite.css">
+</head>
+<body>
+    <header>
+    </header>
+  
+    <section>
+        <div id="logotipo"> 
+            <img src="img/logo_do_site.jpeg" width="250px" alt="Logo do site">
+            <h1>Sistema de gest&atilde;o de est&aacute;gio</h1>
+        </div>
+
+        <form action="empresas.html" class="form-container row g-3">
+        
+            <div class="col-md-6">
+                <label for="inputNomeCompleto" class="form-label">Nome completo</label>
+                <input type="text" class="form-control" id="inputNomeCompleto" placeholder="Digite seu nome completo" required>
+            </div>
+
+            <div class="col-md-6">
+                <label for="inputEmail4" class="form-label">Email</label>
+                <input type="email" class="form-control" id="inputEmail4" placeholder="seu@email.com" required>
+            </div>
+
+            <div class="col-md-6">
+                <label for="inputTelefone" class="form-label">Número de telefone</label>
+                <input type="tel" class="form-control" id="inputTelefone" placeholder="(+258) 84 123 4567" required>
+            </div>
+
+            <div class="col-md-6">
+                <label for="inputEndereco" class="form-label">Endereço</label>
+                <input type="text" class="form-control" id="inputEndereco" placeholder="Rua, número, bairro" required>
+            </div>
+
+            <div class="col-md-6">
+                <label for="inputDocumento" class="form-label">Número do documento</label>
+                <input type="text" class="form-control" id="inputDocumento" placeholder="Bilhete de identidade ou passaporte" required>
+            </div>
+
+            <div class="col-md-6">
+                <label for="inputEstadoCivil" class="form-label">Estado civil</label>
+                <select id="inputEstadoCivil" class="form-select" required>
+                    <option selected>Selecione...</option>
+                    <option>Solteiro(a)</option>
+                    <option>Casado(a)</option>
+                    <option>Divorciado(a)</option>
+                    <option>Viúvo(a)</option>
+                </select>
+            </div>
+
+            <div class="col-md-6">
+                <label for="inputProvincia" class="form-label">Província</label>
+                <select id="inputProvincia" class="form-select" required>
+                    <option selected>Selecione a sua província</option>
+                    <option>Maputo</option>
+                    <option>Gaza</option>
+                    <option>Inhambane</option>
+                    <option>Sofala</option>
+                    <option>Manica</option>
+                    <option>Tete</option>
+                    <option>Zamb&eacute;zia</option>
+                    <option>Nampula</option>
+                    <option>Cabo Delgado</option>
+                    <option>Niassa</option>
+                    <option>Matola</option>
+                    <option>Outras</option>
+                </select>
+            </div>
+
+            <div class="col-12 text-center">
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </div>
+        </form>
+    </section>
+    <footer>
+
+    </footer>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
